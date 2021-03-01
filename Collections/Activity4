@@ -1,0 +1,42 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Activity4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc= new Scanner(System.in); 
+		  ArrayList<Integer> a = new ArrayList<Integer>();
+		
+		  System.out.println("enter the number of matches Gayle had played. ");
+		  int c=sc.nextInt();
+		
+		  for(int i=0;i<c;i++)
+          {
+          	int b=sc.nextInt();
+           a.add(b);
+          }
+		 
+		  int count100=0;
+		  int count50=0;
+		    for(int i=0;i<c;i++)
+		    {
+		    	if(a.get(i)>=100)
+		    	{
+		    		count100++;
+		    	}
+		    	else if(a.get(i)>=50 && a.get(i)<100)
+		    	{
+		    		count50++;
+		    	}
+		    }
+		
+		    System.out.println("the number of 50's and 100's Gayle has scored are: " );
+		    System.out.println(count50);
+		    System.out.println(count100);
+	
+		  
+	}
+
+}
